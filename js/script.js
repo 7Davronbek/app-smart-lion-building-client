@@ -24,13 +24,11 @@ lang.addEventListener("click", () => {
     lang.classList.toggle("active")
 })
 
-const burger = document.querySelector("#burger")
-const burgerContent = document.querySelector("#burgerContent")
-
+const burger = document.querySelector("#burger");
+const burgerContent = document.querySelector(".contentBox");
 burger.addEventListener("click", () => {
-    burgerContent.classList.toggle("active")
-})
-
+  burgerContent.classList.toggle("active");
+});
 
 
 // const navbar = document.querySelector('.header')

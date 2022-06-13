@@ -226,6 +226,11 @@ body {
   transition: all .4s ease-in-out;
 }
 
+.header .header_box {
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
 @media (max-width: 992px) {
   .header .header_box {
     position: fixed;
@@ -249,6 +254,7 @@ body {
             justify-content: center;
     visibility: hidden;
     opacity: 0;
+    height: 100vh;
   }
 }
 
@@ -257,36 +263,25 @@ body {
   visibility: visible;
 }
 
-.header .header_box.active::after {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  content: 'x';
-  font-size: 50px;
-}
-
-.header .header_box.active .box_name {
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.header .mobileWrap {
+.mobileWrap {
   display: none;
 }
 
 @media (max-width: 992px) {
-  .header .mobileWrap {
+  .mobileWrap {
     display: block;
+    text-align: center;
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 992px) {
-  .header .desktopWrap {
+  .desktopWrap {
     display: none !important;
   }
 }
 
-.header .lang_name {
+.lang_name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,22 +293,22 @@ body {
           transform: translateY(13px);
 }
 
-.header .lang_name .language {
+.lang_name .language {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.header .lang_name .language.uz {
+.lang_name .language.uz {
   opacity: 0;
   visibility: hidden;
 }
 
-.header .lang_name.active .uz {
+.lang_name.active .uz {
   visibility: visible;
   opacity: 1;
 }
 
-.header .header_bar {
+.header_bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,7 +320,7 @@ body {
           align-items: center;
 }
 
-.header .header_bar .box_name {
+.header_bar .box_name {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -336,20 +331,18 @@ body {
   line-height: 21px;
 }
 
-.header .language {
+@media (max-width: 992px) {
+  .header_bar .box_name {
+    margin-top: 30px;
+  }
+}
+
+.language {
   font-size: 24px;
   color: white;
   font-weight: 700;
   line-height: 28px;
   text-decoration: none;
-}
-
-.header.active {
-  background-color: #ffffff26;
-  border-bottom-color: #fff;
-  padding: 15px 0;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
 }
 
 .navbarLine {
