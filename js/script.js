@@ -18,10 +18,16 @@ window.addEventListener('scroll', () => {
     navbarScroll()
 })
 
-const lang = document.querySelector("#lang")
+const lang = document.querySelector(".langs")
 
 lang.addEventListener("click", () => {
     lang.classList.toggle("active")
+})
+
+const lang2 = document.querySelector(".langs2")
+
+lang2.addEventListener("click", () => {
+    lang2.classList.toggle("active")
 })
 
 const burger = document.querySelector("#burger");
