@@ -28,6 +28,7 @@ const burger = document.querySelector("#burger");
 const burgerContent = document.querySelector(".contentBox");
 burger.addEventListener("click", () => {
   burgerContent.classList.toggle("active");
+  burger.classList.toggle("active")
 });
 
 
